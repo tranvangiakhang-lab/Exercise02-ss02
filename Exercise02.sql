@@ -1,0 +1,8 @@
+CREATE DATABASE database02
+USE database02
+
+CREATE TABLE CUSTOMERS (
+    CustomerID INT PRIMARY KEY,
+    FullName NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(100) NOT NULL UNIQUE, 
+    Age INT CHECK (Age >= 0 AND Age <= 120) 
